@@ -24,7 +24,7 @@ include_recipe 'git'
 # Install dependencies
 case node['platform_family']
 when 'debian'
-  package 'libcurl3' do
+  package 'libcurl4' do
     action :install
   end
 
